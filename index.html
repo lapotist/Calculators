@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Pk Sim V3 Calculators</title>
-    <script src="totalxp.js"></script>
+    <script src="totalxp.js"></script> <!-- Ensure this path is correct -->
 </head>
 <body>
     <label for="inputNumber">Enter a number:</label>
@@ -12,7 +12,7 @@
     <script>
         function calculate() {
             var inputNumber = document.getElementById("inputNumber").value;
-            var result = levelXp(inputNumber); // Assuming totalXP is a function in totalxp.js
+            var result = levelXp(inputNumber); // Calls levelXp function from totalxp.js
             document.getElementById("output").innerHTML = "Result: " + result;
         }
     </script>
