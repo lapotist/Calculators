@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pk Sim V3 Calculators</title>
+    <script src="totalxp.js"></script>
+</head>
+<body>
+    <label for="inputNumber">Enter a number:</label>
+    <input type="number" id="inputNumber">
+    <button onclick="calculate()">Calculate</button>
+    <p id="output"></p>
+    <script>
+        function calculate() {
+            var inputNumber = document.getElementById("inputNumber").value;
+            var result = totalXP(inputNumber); // Assuming totalXP is a function in totalxp.js
+            document.getElementById("output").innerHTML = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
