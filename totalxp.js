@@ -2,15 +2,7 @@ const listOfLvl= [175,157,250,225,325,292,276,400,360,340,320,475,427,403,380,55
 function levelXp(level) {
     return 75 * (level - 1) / 2 * level;
 }
-function totalXp(arr) {
-    let list = [];
-    for (let i = 0; i < arr.length; i++) {
-        list.push(levelXp(arr[i]));
-    }
-    return list;
-}
 
-console.log(totalXp(listOfLvl));
 
 
 
