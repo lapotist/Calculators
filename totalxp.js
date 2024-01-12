@@ -2,7 +2,9 @@ const listOfLvl= [175,157,250,225,325,292,276,400,360,340,320,475,427,403,380,55
 function levelXp(level) {
     return 75 * (level - 1) / 2 * level;
 }
-
+function xpToLvl(xp) {
+    console.log((1/30) * Math.sqrt(24 * xp + 225) + (1/2))
+}
 
 
 
