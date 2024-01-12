@@ -2,18 +2,32 @@
 <html>
 <head>
     <title>Pk Sim V3 Calculators</title>
-    <script src="totalxp.js"></script> <!-- Ensure this path is correct -->
+    <script src="calculators.js"></script>
 </head>
 <body>
-    <label for="inputNumber">Enter a number:</label>
-    <input type="number" id="inputNumber">
-    <button onclick="calculate()">Calculate</button>
-    <p id="output"></p>
+    <!-- Level to XP Calculator -->
+    <label for="inputLevel">Enter a level:</label>
+    <input type="number" id="inputLevel">
+    <button onclick="calculateXP()">Calculate XP</button>
+    <p id="xpOutput"></p>
+
+    <!-- XP to Level Calculator -->
+    <label for="inputXP">Enter XP:</label>
+    <input type="number" id="inputXP">
+    <button onclick="calculateLevel()">Calculate Level</button>
+    <p id="levelOutput"></p>
+
     <script>
-        function calculate() {
-            var inputNumber = document.getElementById("inputNumber").value;
-            var result = levelXp(inputNumber); // Calls levelXp function from totalxp.js
-            document.getElementById("output").innerHTML = "Result: " + result;
+        function calculateXP() {
+            var inputLevel = document.getElementById("inputLevel").value;
+            var xpResult = levelXp(inputLevel); // Assuming levelXp is a function in calculators.js
+            document.getElementById("xpOutput").innerHTML = "XP Required: " + xpResult;
+        }
+
+        function calculateLevel() {
+            var inputXP = document.getElementById("inputXP").value;
+            var levelResult = xpToLvl(inputXP); // Assuming xpToLvl is a function in calculators.js
+            document.getElementById("levelOutput").innerHTML = "Level Achieved: " + levelResult;
         }
     </script>
 </body>
