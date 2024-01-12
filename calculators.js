@@ -3,7 +3,7 @@ function levelXp(level) {
     return 75 * (level - 1) / 2 * level;
 }
 function xpToLvl(xp) {
-    console.log((1/30) * Math.sqrt(24 * xp + 225) + (1/2))
+    return (1/30) * Math.sqrt(24 * xp + 225) + (1/2)
 }
 
 
